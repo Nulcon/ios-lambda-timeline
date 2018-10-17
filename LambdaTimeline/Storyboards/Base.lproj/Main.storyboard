@@ -489,7 +489,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dhx-mg-6pA" customClass="CameraPreviewView" customModule="VideoFilters" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dhx-mg-6pA" customClass="VideoPreview" customModule="LambdaTimeline" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FsF-8D-Vef">
@@ -500,6 +500,9 @@
                                         </constraints>
                                         <color key="tintColor" red="1" green="0.18592151649999999" blue="0.19488327859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" image="Record"/>
+                                        <connections>
+                                            <action selector="toggleRecord:" destination="qkU-K0-U8p" eventType="touchUpInside" id="MTu-IG-cjQ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -518,6 +521,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eGh-hK-sdb"/>
                     </view>
+                    <connections>
+                        <outlet property="previewView" destination="dhx-mg-6pA" id="fvB-aP-Sua"/>
+                        <outlet property="recordButton" destination="FsF-8D-Vef" id="vPh-XW-OU9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="geP-jZ-wpt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
