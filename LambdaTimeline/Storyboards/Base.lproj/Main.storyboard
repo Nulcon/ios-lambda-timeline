@@ -98,6 +98,7 @@
                     <connections>
                         <segue destination="1Aw-4e-BW2" kind="show" identifier="AddImagePost" id="jaI-fq-Woc"/>
                         <segue destination="OyM-8q-Icp" kind="show" identifier="ViewImagePost" id="hhs-es-AdQ"/>
+                        <segue destination="CQM-pt-hMD" kind="presentation" identifier="AddVideoPost" id="Sab-zk-3au"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WRz-lg-pQU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -289,6 +290,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XXa-A2-VJT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1969" y="-195"/>
+        </scene>
+        <!--Video Post View Controller-->
+        <scene sceneID="WTo-AS-asu">
+            <objects>
+                <viewController id="CQM-pt-hMD" customClass="VideoPostViewController" customModule="LambdaTimeline" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DR3-K0-Hlv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="HfG-gT-4cZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="y1X-r6-9tN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q1o-fc-LOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1217" y="944"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gdW-Je-ais">

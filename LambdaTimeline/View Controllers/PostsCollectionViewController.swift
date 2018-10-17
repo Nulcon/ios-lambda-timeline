@@ -30,9 +30,14 @@ class PostsCollectionViewController: UICollectionViewController, UICollectionVie
             self.performSegue(withIdentifier: "AddImagePost", sender: nil)
         }
         
+        let videoPostAction = UIAlertAction(title: "Video", style: .default) { (_) in
+            self.performSegue(withIdentifier: "AddVideoPost", sender: nil)
+        }
+        
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         
         alert.addAction(imagePostAction)
+        alert.addAction(videoPostAction)
         alert.addAction(cancelAction)
         
         self.present(alert, animated: true, completion: nil)
